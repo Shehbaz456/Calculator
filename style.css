@@ -25,9 +25,7 @@
    background: #141E30; 
   background: -webkit-linear-gradient(to right, #243B55, #141E30); 
 background: linear-gradient(to right, #243B55, #141E30); 
-
-
-  padding: 20px;
+  padding: 40px 0;
   height: 100vh;
 }
 
@@ -240,7 +238,7 @@ text-align: center;
 }
 
 #num8 {
-  top: 32px;
+  top: 36px;
   left: 26px;
   position: absolute;
 }
@@ -249,4 +247,61 @@ text-align: center;
   top: -19px;
   left: 70px;
   position: absolute;
+}
+
+@media (max-width:350px) {
+  .top-btn button,
+.btm-btn button,.op-center button,
+.num-btns{
+  padding: 12px 12px;
+  font-size: 20px;
+}
+
+#num2 {
+  top: 55px;
+  left: 238px;
+  position: absolute;
+}
+
+#num3 {
+  top: 130px;
+  left: 238px;
+  position: absolute;
+}
+
+#num4 {
+  top: 188px;
+  left: 202px;
+  position: absolute;
+}
+
+#num5 {
+  top: 199px;
+  left: 128px;
+  position: absolute;
+}
+
+#num6 {
+  top: 188px;
+  left: 50px;
+  position: absolute;
+}
+
+#num7 {
+  top: 116px;
+  left: 18px;
+  position: absolute;
+}
+
+#num8 {
+  top: 32px;
+  left: 20px;
+  position: absolute;
+}
+
+#num9 {
+  top: -19px;
+  left: 70px;
+  position: absolute;
+}
 }
