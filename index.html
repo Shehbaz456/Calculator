@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Calculator</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wraper">
+      <div class="cal-con">
+        <div style="background-color: #f7f8f8;">
+
+          <!-- result field -->
+          <input id="btn-res" type="text" value="0">
+
+
+          <!-- more functionality -->
+          <div class="top-btn">
+            <button>.</button>
+            <button>%</button>
+            <button>√</button>
+            <button>AC</button>
+          </div>
+
+          <!-- main play  -->
+          <div class="cir-box" style="position: relative;">
+            <div class="op-center">
+              <div>
+                <div>
+                  <button id="mul-op">*</button>
+                  <button id="div-op">/</button>
+                </div>
+                <div>
+                  <button id="sub-op">-</button>
+                  <button id="add-op">+</button>
+                </div>
+              </div>
+            </div>
+            
+              <button class="num-btns" id="num0">0</button>
+              <button class="num-btns" id="num1">1</button>
+              <button class="num-btns" id="num2">2</button>
+              <button class="num-btns" id="num3">3</button>
+              <button class="num-btns" id="num4">4</button>
+              <button class="num-btns" id="num5">5</button>
+              <button class="num-btns" id="num6">6</button>
+              <button class="num-btns" id="num7">7</button>
+              <button class="num-btns" id="num8">8</button>
+              <button class="num-btns" id="num9">9</button>
+            
+          </div>
+
+
+          <!-- btm-btn -->
+          <div class="btm-btn" id="#btm-btn">
+            <button style="background-color:rgb(238, 84, 84);">=</button>
+            <button>(</button>
+            <button>)</button>
+            <button style="background-color: rgb(238, 84, 84);">DE</button>
+            <!-- <button><i value="del" class='bx bxs-tag-x'></i></button> -->
+          </div>
+          <div class="empty-space" style="height: 15px;"></div>
+        </div>
+      </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
