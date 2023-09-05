@@ -1,0 +1,252 @@
+
+:root {
+  --mb-4: 2rem;
+  --mb-5: 3rem;
+  --btn-col: #4C43CD;
+  --cal-con:#a5a9e2;
+  --top-btn-col:#e46191;
+  --btm-btn-col:#e6769f;
+  --num-btns-col:#8285da;
+  --res-btn-bg-col :linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+   background: #141E30; 
+  background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+background: linear-gradient(to right, #243B55, #141E30); 
+
+
+  padding: 20px;
+  height: 100vh;
+}
+
+.cal-con {
+  background-color: var(--cal-con);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+  padding: 15px;
+  width: 350px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+#btn-res {
+  text-align: right;
+  background: var(--res-btn-bg-col);
+  height: 100px;
+  font-size: 40px;
+  padding-right:20px ;
+  pointer-events: none;
+}
+
+.top-btn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+  padding: var(--mb-4) 0;
+}
+
+.btm-btn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+
+/* rounded btn */
+.cir-box {
+  border-radius: 50%;
+  margin: var(--mb-5) 0;
+}
+
+.op-center {
+  background-color: #fff;
+padding: 46px;
+text-align: center;
+}
+
+#mul-op {
+  cursor: pointer;
+  font-size: 28px;
+  color: #fff;
+  width: 76px;
+  height: 65px;
+  border-radius: 50% 5px 6px 9px;
+  background-color: #67c3ee;
+  margin-bottom: 7px;
+  transition: all .2s ease-in-out;
+}
+#mul-op:hover{
+  background-color: #1da6e6;
+  transform: scale(1.05);
+} 
+
+#div-op {
+  cursor: pointer;
+  font-size: 28px;
+  color: #fff;
+  width: 76px;
+  height: 65px;
+  border-radius: 5px 50% 5px 5px;
+  background-color: #ecb275;
+}
+#div-op:hover{
+    background-color: #f3a24b;
+    transform: scale(1.05);
+  } 
+
+#sub-op {
+  cursor: pointer;
+  font-size: 28px;
+  width: 76px;
+  height: 65px;
+  border-radius: 5px 5px 5px 50%;
+  background-color: #ffd19f;
+  font-weight: 500;
+}
+#sub-op:hover{
+  background-color: #f8af61;
+  transform: scale(1.05);
+} 
+
+#add-op {
+  cursor: pointer;
+  font-size: 28px;
+  width: 76px;
+  height: 65px;
+  border-radius: 5px 5px 50% 5px;
+  background-color: #9ec387;
+}
+#add-op:hover{
+  background-color: #98db6f;
+  transform: scale(1.05);
+} 
+
+
+/* btm -btn */
+.top-btn button,
+.btm-btn button,.op-center button,
+.num-btns{
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 50%;
+  background-color: var(--btn-col);
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, 
+  transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-size: 22px;
+  border: 0;
+  cursor: pointer;
+}
+
+.top-btn>button,
+.btm-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-btn>button {
+  background-color: var(--top-btn-col);
+}
+.top-btn>button:hover{
+  background-color: #f14d89;
+  transform: scale(1.04);
+}
+
+.btm-btn>button {
+  background-color: var(--btm-btn-col);
+}
+.btm-btn>button:hover{
+  background-color: #f14d89;
+  transform: scale(1.04);
+}
+
+/* rounded num btn */
+.num-btns{
+  background-color: var(--num-btns-col);
+}
+
+#num0 {
+  top: -29px;
+  left: 141px;
+  position: absolute;
+}
+
+#num1 {
+  top: -14px;
+  left: 213px;
+  position: absolute;
+}
+
+#num2 {
+  top: 53px;
+  left: 250px;
+  position: absolute;
+}
+
+#num3 {
+  top: 134px;
+  left: 251px;
+  position: absolute;
+}
+
+#num4 {
+  top: 188px;
+  left: 202px;
+  position: absolute;
+}
+
+#num5 {
+  top: 196px;
+  left: 138px;
+  position: absolute;
+}
+
+#num6 {
+  top: 185px;
+  left: 68px;
+  position: absolute;
+}
+
+#num7 {
+  top: 116px;
+  left: 26px;
+  position: absolute;
+}
+
+#num8 {
+  top: 32px;
+  left: 26px;
+  position: absolute;
+}
+
+#num9 {
+  top: -19px;
+  left: 70px;
+  position: absolute;
+}
