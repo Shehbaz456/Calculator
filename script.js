@@ -10,7 +10,7 @@ Array.from(buttons).forEach((button)=>{
       output = eval( output.replace('%',"/100")); 
       console.log(e.target);
       console.log(output);
-      input.value =  output ;
+      input.value = output.toFixed(2) ;
     }
     else if(e.target.innerHTML === 'AC'){
       output = '';
